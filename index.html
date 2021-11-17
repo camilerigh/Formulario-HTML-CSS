@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  type="text/css" href="styles.css" media="screen">
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+    <div>
+        <h1 id="titulo">Cadastro</h1>
+<p id="subtitulo">Cadastre suas informações</p>
+ </div>
+    <form>
+        <fieldset class="Grupo">
+            <div class="campo">
+                <label for="nome"><strong>nome</strong></label>
+                <input type="text" name="name" id="nome" checked required>
+            </div>
+            <div class="campo">
+                <label for="sobrenome"><strong>sobrenome</strong></label>
+                <input type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+
+        </fieldset>
+        <div class="campo">
+            <label for="email"><strong>email</strong></label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="campo">
+            <label>Com qual genêro voce se identifica?</label>
+            <label>
+                <input type="radio" name="genero" value="feminino">Feminino
+            </label>
+            <label> 
+                <input type="radio" name="genero" value="masculino">Masculino
+            </label>
+            <label> 
+                <input type="radio" name="genero" value="outro">Outro
+            </label>
+
+        </div>
+        <div class="campo">
+            <label for="idade">Idade</label>
+            <select id="idade">
+                <option selected disabled value="">Selecione</option>
+                <option>18-23 anos</option>
+                <option>24-29 anos</option>
+                <option>+34 anos</option>
+                </select>
+        </div>
+        <br><br><br>
+        <fieldset>
+            
+            <div class="check">
+                <label><strong>Selecione as regiões para onde você já viajou:</strong></label><br>
+                <input type="checkbox" id="regiao1" name="regiao1" value="norte"> 
+                <label for="regiao1"> Região norte</label>
+                <input type="checkbox" id="regiao2" name="regiao2" value="centro-oeste"> 
+                <label for="regiao2">Região centro-oeste</label>
+                <input type="checkbox" id="regiao3" name="regiao3" value="nordeste"> 
+                <label for="regiao3">Região Nordeste</label>
+                <input type="checkbox" id="regiao4" name="regiao4" value="sul"> 
+                <label for="regiao4">Região sul</label>
+                <input type="checkbox" id="regiao5" name="regiao5" value="sudeste"> 
+                <label for="regiao5">Região sudeste</label>
+                
+            </div>
+        </fieldset>
+        <div class="campo">
+            <br>
+            <label><strong>Conte qual foi sua viagem favorita:</strong></label>
+            <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+        </div>
+        <button class="botao" type="submit">Concluido</button>
+    </form>
+</body>
+
+</html>
